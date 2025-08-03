@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Rasmalai(My Love) - Priya Ji</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'heartbeat': 'heartbeat 1.5s ease-in-out infinite',
+                        'sparkle': 'sparkle 2s ease-in-out infinite',
+                        'fadeIn': 'fadeIn 1s ease-in-out',
+                        'slideUp': 'slideUp 0.8s ease-out'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        heartbeat: {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.1)' },
+                        },
+                        sparkle: {
+                            '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+                            '50%': { opacity: '0.3', transform: 'scale(1.2)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom gradient text */
+        .gradient-text {
+            background: linear-gradient(45deg, #f43f5e, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom background */
+        .bg-love {
+            background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 25%, #f3e8ff 50%, #ede9fe 75%, #f0f9ff 100%);
+        }
+
+        /* Floating hearts */
+        .floating-heart {
+            position: absolute;
+            font-size: 20px;
+            opacity: 0.7;
+            animation: floatingHearts 6s ease-in-out infinite;
+        }
+
+        @keyframes floatingHearts {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.7;
+            }
+            25% { 
+                transform: translateY(-20px) rotate(5deg);
+                opacity: 1;
+            }
+            50% { 
+                transform: translateY(-10px) rotate(-5deg);
+                opacity: 0.8;
+            }
+            75% { 
+                transform: translateY(-15px) rotate(3deg);
+                opacity: 0.9;
+            }
+        }
+
+        /* Button hover effect */
+        .love-button {
+            background: linear-gradient(45deg, #f43f5e, #ec4899);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .love-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .love-button:hover::before {
+            left: 100%;
+        }
+
+        .love-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(244, 63, 94, 0.3);
+        }
+
+        /* Message reveal animation */
+        .message-hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease;
+        }
+
+        .message-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-love min-h-screen overflow-x-hidden">
+    <!-- Floating Hearts Background -->
+    <div class="floating-heart" style="top: 10%; left: 10%; animation-delay: 0s;">💖</div>
+    <div class="floating-heart" style="top: 20%; right: 15%; animation-delay: 1s;">💝</div>
+    <div class="floating-heart" style="top: 70%; left: 20%; animation-delay: 2s;">💕</div>
+    <div class="floating-heart" style="top: 60%; right: 10%; animation-delay: 3s;">💗</div>
+    <div class="floating-heart" style="top: 30%; left: 80%; animation-delay: 4s;">💓</div>
+    <div class="floating-heart" style="top: 80%; right: 70%; animation-delay: 5s;">💘</div>
+
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="text-center max-w-4xl mx-auto">
+            <!-- Main Title -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif gradient-text mb-8 animate-float">
+                To My Rasmalai "My Love"
+            </h1>
+            
+            <!-- Priya's Name -->
+            <h2 class="text-3xl md:text-5xl font-bold text-purple-600 mb-6 animate-fadeIn">
+                Priya 💖
+            </h2>
+            
+            <!-- Animated Heart -->
+            <div class="animate-heartbeat text-5xl md:text-6xl lg:text-7xl mb-8">
+                ❤️
+            </div>
+            
+            <!-- Love Message -->
+            <div class="animate-slideUp">
+                <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8 px-4">
+                    You are the sunshine in my days and the stars in my nights. 
+                    Every moment with you is a treasure that I hold close to my heart.
+                    Your smile lights up my world, and your love makes everything beautiful.
+                </p>
+            </div>
+
+            <!-- Interactive Button -->
+            <button 
+                id="loveButton" 
+                class="love-button px-8 py-4 text-white rounded-full font-semibold text-lg shadow-lg mb-8"
+            >
+                <span id="buttonText">Click to reveal my heart 💕</span>
+            </button>
+
+            <!-- Hidden Messages -->
+            <div id="hiddenMessages" class="space-y-6 mt-8">
+                <div class="message-hidden bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30">
+                    <h3 class="text-2xl font-serif text-purple-700 mb-3">My Promise to You</h3>
+                    <p class="text-gray-700">
+                        I promise to love you through every sunrise and sunset, 
+                        to be your strength when you need it, and to celebrate 
+                        every joy with you. You are my everything, Priya.
+                    </p>
+                </div>
+
+                <div class="message-hidden bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30">
+                    <h3 class="text-2xl font-serif text-purple-700 mb-3">What You Mean to Me</h3>
+                    <p class="text-gray-700">
+                        You're not just my girlfriend, you're my best friend, 
+                        my confidant, my inspiration, and my greatest love. 
+                        With you, I've found my home.
+                    </p>
+                </div>
+
+                <div class="message-hidden bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30">
+                    <h3 class="text-2xl font-serif text-purple-700 mb-3">Forever and Always</h3>
+                    <p class="text-gray-700">
+                        No matter where life takes us, no matter what challenges we face, 
+                        my love for you will remain constant and true. 
+                        You are my forever, Priya. ❤️
+                    </p>
+                </div>
+            </div>
+
+            <!-- Love Counter -->
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-2">You've made my heart beat</p>
+                <div class="text-3xl font-bold text-pink-600" id="heartCounter">0</div>
+                <p class="text-gray-600">times today 💓</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Interactive functionality
+        let clickCount = 0;
+        let messagesRevealed = false;
+        const button = document.getElementById('loveButton');
+        const buttonText = document.getElementById('buttonText');
+        const hiddenMessages = document.getElementById('hiddenMessages');
+        const heartCounter = document.getElementById('heartCounter');
+        
+        // Load saved count from localStorage
+        clickCount = parseInt(localStorage.getItem('loveClickCount') || '0');
+        updateHeartCounter();
+        
+        button.addEventListener('click', function() {
+            clickCount++;
+            localStorage.setItem('loveClickCount', clickCount.toString());
+            updateHeartCounter();
+            
+            if (!messagesRevealed) {
+                revealMessages();
+                messagesRevealed = true;
+                buttonText.textContent = `Send more love 💕 (${clickCount})`;
+            } else {
+                buttonText.textContent = `Sending love... 💕 (${clickCount})`;
+                createHeartExplosion();
+            }
+        });
+        
+        function updateHeartCounter() {
+            heartCounter.textContent = clickCount;
+            if (clickCount > 0) {
+                heartCounter.classList.add('animate-heartbeat');
+            }
+        }
+        
+        function revealMessages() {
+            const messages = hiddenMessages.querySelectorAll('.message-hidden');
+            messages.forEach((message, index) => {
+                setTimeout(() => {
+                    message.classList.remove('message-hidden');
+                    message.classList.add('message-visible');
+                }, index * 500);
+            });
+        }
+        
+        function createHeartExplosion() {
+            const hearts = ['💖', '💕', '💗', '💓', '💘', '💝', '❤️', '💜'];
+            
+            for (let i = 0; i < 10; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                    heart.style.position = 'fixed';
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.top = Math.random() * 100 + 'vh';
+                    heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
+                    heart.style.pointerEvents = 'none';
+                    heart.style.zIndex = '1000';
+                    heart.style.animation = 'sparkle 2s ease-out forwards';
+                    
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 2000);
+                }, i * 100);
+            }
+        }
+        
+        // Add floating hearts dynamically
+        function addFloatingHeart() {
+            const hearts = ['💖', '💕', '💗', '💓', '💘'];
+            const heart = document.createElement('div');
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.className = 'floating-heart';
+            heart.style.top = Math.random() * 100 + '%';
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDelay = Math.random() * 3 + 's';
+            
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }
+        
+        // Add new floating hearts every 10 seconds
+        setInterval(addFloatingHeart, 10000);
+        
+        // Auto-increment heart counter every 30 seconds (simulating love growing)
+        setInterval(() => {
+            if (clickCount > 0) {
+                clickCount++;
+                localStorage.setItem('loveClickCount', clickCount.toString());
+                updateHeartCounter();
+            }
+        }, 30000);
+    </script>
+</body>
+</html>
