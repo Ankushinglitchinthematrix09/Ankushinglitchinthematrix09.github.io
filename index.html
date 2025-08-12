@@ -326,11 +326,17 @@
                                 beautiful memories we've shared together."
                             </p>
                         </div>
-                        <button class="w-full bg-gradient-to-r from-pink-500 to-purple-500 text-white py-4 px-8 rounded-full font-bold text-lg hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        <!-- Audio Player -->
+                        <div class="mb-6">
+                            <audio id="ourSong" class="w-full" controls>
+                                <source src="audio/our-song.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        
+                        <button id="playButton" class="w-full bg-gradient-to-r from-pink-500 to-purple-500 text-white py-4 px-8 rounded-full font-bold text-lg hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
                             🎵 Play Our Song 🎵
                         </button>
-                    </div>
-                </div>
 
                 <div class="message-hidden glass-card rounded-3xl p-8">
                     <h3 class="text-3xl font-serif text-purple-700 mb-4">Forever and Always</h3>
